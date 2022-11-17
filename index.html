@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery New Account Creation Form</title>
+        <link rel="stylesheet" href="account_form.css"> 
+        <style>
+            .errorMessage {
+                color: red;
+            }
+        </style>   
+    </head>
+       
+        <body>
+            <h1>New Account Creation Form</h1>
+                <form id="new-account-form">
+                    <p>
+                    <label for="email"><b>E-mail</b></label>
+                    <input type="email" name="email" size="30" value="" placeholder="Enter your email address">
+                    <div id="emailErrorMessage" class="errorMessage"></div>
+                    </p>
+                    <p>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" name="password1" size="30" value="" placeholder="Enter a password">   
+                    </p>
+                    <p>
+                    <label for="password"><b>Re-Enter Password</b></label>
+                    <input type="password" name="password2" size="30" value="" placeholder="Re-Enter your password">
+                    <div id="passwordErrorMessage" class="errorMessage"></div>     
+                    </p>
+                    <button type="submit">Create Account</button>
+                </form>
+            <span id="output" style="font-weight: bold"></span>
+            <!--<p>Form Output: <span id="output"></span></p>-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script src="account_form.js"></script>
+         </body>
+
+</html>
